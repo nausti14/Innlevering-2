@@ -1,3 +1,42 @@
+.col{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.col-12{
+    width: 762px;
+}
+
+.col-3{
+    width: 222px;
+    margin-bottom: 30px;
+    float: left;
+}
+
 body{
     background-color: rgb(220, 220, 220);
 }
+
+/*step: mobil + tablet*/
+        @media screen and (max-width: 1030px){
+            
+            #container{
+                width: auto;
+            }  
+            
+            #banner{
+                /*display: block/inline*/
+                display: none;
+            }
+            
+            .col{
+                background-color: rgb(200, 250, 150);
+            }
+            
+            .col-4{
+                width: auto;
+                height: 450px;
+                float: none;
+            }
+            
+        }

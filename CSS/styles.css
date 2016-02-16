@@ -3,6 +3,7 @@
         min-width: 1024px;
         padding-top: 75px;
         padding-bottom: 46px;
+        background-color: rgb(247, 245, 245);
     }
     
     .grpelem {
@@ -25,20 +26,13 @@
         z-index: 177;
         width: 565px;
         background-color: transparent;
-        position: relative;
+        position: absolute;
         margin-right: -10000px;
         margin-top: 111px;
         left: 261px;
     }
-    
-    #kart2 {
-        z-index: 179;
-        width: 866px;
-        background-color: transparent;
-        opacity: 0;
-        position: relative;
-        margin-right: -10000px;
-    }
+
+
     
     col {
         margin-left: 15px;
@@ -65,14 +59,16 @@
         float: left;
     }
     
+img {
+    display: inline-block;
+}
+
     .img-responsive {
         width: 100%;
         height: 50%;
     }
     
-    body {
-        background-color: rgb(220, 220, 220);
-    }
+
     
     #buttons {
         margin-left: 950px;
@@ -82,6 +78,7 @@
         width: 1024px;
         margin: auto;
     }
+
     
     @media screen and (max-width: 800px) {
         #mainHeader {

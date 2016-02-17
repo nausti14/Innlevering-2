@@ -51,3 +51,13 @@ $(window).on("load", function () {
         fade();
     }); //Fade in elements during scroll
 });
+
+//Scroll BackToTop funskjonen
+$(document).ready(function(){
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});

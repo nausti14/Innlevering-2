@@ -1,4 +1,4 @@
-//slå på lyd - slå av lyd funskjonen
+//bytt bilde ved stop av lyd og på
 function changeImage(element) {
     var right = 'assets/ferdigfaen-01.png';
     var left = 'assets/rass-01.png';
@@ -10,6 +10,8 @@ function changeImage(element) {
         audioElement.pause();
     }
 }
+
+//spill av lyd funksjonen
 var audioElement;
 $(document).ready(function () {
     audioElement = document.createElement('audio');

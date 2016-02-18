@@ -54,7 +54,7 @@ $(window).on("load", function () {
 
 //Scroll BackToTop funskjonen
 $(document).ready(function(){
-	//Click event to scroll to top
+	//Click event som scroller tilbake til toppen
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;

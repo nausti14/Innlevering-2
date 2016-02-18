@@ -61,3 +61,8 @@ $(document).ready(function(){
 	});
 	
 });
+
+
+  $(function() {
+    $( "#imgSound" ).draggable();
+  });

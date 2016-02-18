@@ -1,3 +1,4 @@
+//slå på lyd - slå av lyd funskjonen
 function changeImage(element) {
     var right = 'assets/ferdigfaen-01.png';
     var left = 'assets/rass-01.png';
@@ -30,26 +31,26 @@ $(document).ready(function () {
 $(window).on("load", function () {
     function fade() {
         $('.fade').each(function () {
-            /* Check the location of each desired element */
+            
             var objectBottom = $(this).offset().top + $(this).outerHeight();
             var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
-            /* If the object is completely visible in the window, fade it in */
-            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+            /* Hvis objektet er helt synlig i vinduet , fade det in*/
+            if (objectBottom < windowBottom) { //objektet kommer til synet(scroller ned)
                 if ($(this).css('opacity') == 0) {
                     $(this).fadeTo(500, 1);
                 }
-            } else { //object goes out of view (scrolling up)
+            } else { //objekt går ut av synet (scroller opp)
                 if ($(this).css('opacity') == 1) {
                     $(this).fadeTo(500, 0);
                 }
             }
         });
     }
-    fade(); //Fade in completely visible elements during page-load
+    fade(); //Fade in synlige elementer under innlasting av nettside
     $(window).scroll(function () {
         fade();
-    }); //Fade in elements during scroll
+    }); //Fade inn elementer under scrolling
 });
 
 //Scroll BackToTop funskjonen
@@ -63,6 +64,7 @@ $(document).ready(function(){
 });
 
 
+//draggable funskjon
   $(function() {
     $( "#imgSound" ).draggable();
   });
